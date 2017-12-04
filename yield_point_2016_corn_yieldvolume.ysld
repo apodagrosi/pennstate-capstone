@@ -1,0 +1,63 @@
+name: yield_point_2016_corn_yieldvolume
+title: 'yield_point_2016_corn_yieldvolume'
+feature-styles:
+- name: Rule
+  rules:
+  - filter: ${yld_vol_dr >= 262.78}
+    symbolizers:
+    - point:
+        size: 4.50
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#1a9850'
+  - filter: ${yld_vol_dr < 262.78 AND yld_vol_dr >=250.80}
+    symbolizers:
+    - point:
+        size: 4.50
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#91cf60'
+  - filter: ${yld_vol_dr < 250.80 AND yld_vol_dr >=242.44}
+    symbolizers:
+    - point:
+        size: 4.50
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#d9ef8b'          
+  - filter: ${yld_vol_dr < 242.44 AND yld_vol_dr >=234.47}
+    symbolizers:
+    - point:
+        size: 4.50
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#ffffbf'          
+  - filter: ${yld_vol_dr < 234.47 AND yld_vol_dr >=225.26}
+    symbolizers:
+    - point:
+        size: 4.50
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#fee08b'          
+  - filter: ${yld_vol_dr < 225.26 AND yld_vol_dr >=210.65}
+    symbolizers:
+    - point:
+        size: 4.50
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#fc8d59'
+  - filter: ${yld_vol_dr < 210.65}
+    symbolizers:
+    - point:
+        size: 4.50
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#d73027'
+
+
